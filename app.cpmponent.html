@@ -1,7 +1,24 @@
-<div>
-  <input type="number" value="{{result}}"><br><br>
-  <button value="1" (click)="onClick($event)">1</button>&nbsp;&nbsp;
-  <button value="2" (click)="onClick($event)">2</button>&nbsp;&nbsp;
-  <button value="=" (click)="onClick($event)">=</button><br><br>
-  Result : {{final}}
-</div>
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'angular-router-sample';
+  get test() {
+    console.log('test AppComponent')
+    return 1;
+  }
+  ngOnInit() {
+    console.log('app')
+  }
+  clickA() {}
+}
+ 
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/
